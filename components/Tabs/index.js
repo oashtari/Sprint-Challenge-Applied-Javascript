@@ -15,11 +15,8 @@ const trendingTopics = document.querySelector('.tabs .topics');
 const tabCard = () => {
     const tab = document.createElement('div');
     tab.classList.add('tab')
-    // console.log(tab);
     return tab;
 }
-const newTab = tabCard();
-console.log(newTab);
 
 axios
     .get('https://lambda-times-backend.herokuapp.com/topics')
